@@ -153,8 +153,8 @@ program hod_selection
           N_sat = ((mass(i)-kappa*m_cut)/m1)**alpha
           call RANDOM_NUMBER(rand)
           if(rand.lt.N_cent) then
-              count=count+1
               if(x(i).le.2500.d0.and.y(i).le.2500.d0.and.z(i).le.2500.d0) then
+              count=count+1
               g_x=x(i)
               g_y=y(i)
               g_z=z(i)
